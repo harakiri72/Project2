@@ -52,6 +52,7 @@ a {
 .wrapper {
     min-height: 100%;
     position: relative;
+    overflow: hidden;
 }
 
 .container {
@@ -62,42 +63,3 @@ a {
 
 /* Кнопки */
 
-.btn {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 1;
-    text-transform: uppercase;
-    border-radius: 5px;
-    min-width: 137px;
-
-}
-
-.btn_theme_blue {
-    background: #1E92E7;
-    color: #ffffff;
-}
-
-.btn__theme_trasparent {
-    background-color: transparent;
-    border: 1px solid #1E92E7;
-    color: #000000;
-
-}
-
-.btn_size_big {
-    padding: 14px 20px;
-
-}
-
-.btn_size_small {
-    padding: 9px 20px;
-}
-
-
-
-.btn.active {
-    background-color: #1E92E7;
-    color: #FFFFFF;
-}

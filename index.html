@@ -23,21 +23,21 @@
                         <img src="logo.svg" alt="Инфолайн logo" class="logo__img">
                         <span class="logo__title">инфолайн</span>
                     </a>
-                        <ul class="nav__list header__menu">
-                            <li class="nav__item">
-                                <a href="" class="nav__link"><i>Главная</i></a>
-                            </li>
-                            <li class="nav__item">
-                                <a href="" class="nav__link">Аренда</a>
-                            </li>
-                            <li class="nav__item">
-                                <a href="" class="nav__link">Услуги</a>
-                            </li>
-                            <li class="nav__item">
-                                <a href="" class="nav__link">Контакты</a>
-                            </li>
-                        </ul>
-           
+                    <ul class="nav__list header__menu">
+                        <li class="nav__item">
+                            <a href="" class="nav__link"><i>Главная</i></a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="" class="nav__link">Аренда</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="" class="nav__link">Услуги</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="" class="nav__link">Контакты</a>
+                        </li>
+                    </ul>
+
                     <div class="phone header__contact">
                         <img src="tel.svg" alt="Телефон logo" class="header__contact-img">
                         <a href="tel:+73452388000" class="header__phone">8 (3452) <span>388-000</span></a>
@@ -52,11 +52,11 @@
                         <img src="street.svg" alt="icons location" class="location__icon">
                         <span class="location__text">ул. республики, 61</span>
                     </address>
-                    <h1 class="title hero__title">Бизнес-центр в тюмени</h1>
+                    <h1 class="title hero__title">Бизнес-центр в тюмени <br> </h1>
                     <button class="btn hero__btn btn_theme_blue btn_size_big">Заказать звонок</button>
                 </div>
                 <div class="hero__img-wrap">
-                    <img class="hero_img" src="house.png" alt="Здание">
+                    <img class="hero__img" src="house.png" alt="Здание">
                 </div>
             </div>
         </section>
@@ -85,7 +85,9 @@
             </div>
             <div class="offers-slider">
                 <div class="container offer-slider__container">
-                    <button class="control control_prev offers__control offers__control-prev">назад</button>
+                    <button class="control control_prev offers__control offers__control-prev control_type_triangle">назад</button>
+                    <button class="control control_prev offers__control offers__control-prev control_type_disc">назад</button>
+
                     <ul class="offers-list">
                         <li class="offer">
                             <div class="offer__content">
@@ -163,7 +165,8 @@
                             </div>
                         </li>
                     </ul>
-                    <button class="control control_next offers__control offers__control-next">вперед</button>
+                    <button class="control control_next offers__control offers__control-next control_type_triangle">вперед</button>
+                    <button class="control control_next offers__control offers__control-next control_type_disc">вперед</button>
                     <div class="slider-pagination offers__slider-pagination">
                         <!-- Спискок буллетов-->
                         <ul class="slider-pagination__bullets offers__slider-paginations-bullets">
@@ -199,7 +202,7 @@
                     <h2 class="section__title services__title">Услуги компании</h2>
                     <div>
                         <img src="logo.svg" alt="Инфолайн logo" class="logo__img2">
-                    <span class="logo__title2">инфолайн</span>
+                        <span class="logo__title2">инфолайн</span>
                     </div>
                 </div>
                 <!-- Список услуг-->
@@ -310,9 +313,60 @@
             <div class="container">
                 <h2 class="section-title gallery__title">фото галерея</h2>
             </div>
+            <!--Слайдер-->
             <div class="gallery__slider">
-                <!--Кнопки-->
-                <div class="galley__slider-controls"></div>
+                <!--Кнопки слайдера-->
+                <div class="gallery__slider-controls">
+                    <div class="container gallery__slider-controls-container">
+                        <!--Кнопка назад-->
+                        <button
+                            class="control control_type_disc control_prev gallery__slider-control-prev">Назад</button>
+                        <button
+                            class="control control_type_disc control_next gallery__slider-control-next">вперед</button>
+                    </div>
+                </div>
+                <!--Список фото-->
+                <ul class="gallery__list">
+                    <li class="gallery__item">
+                        <img src="cabinet.jpg" alt="" class="gallery__img">
+                    </li>
+                    <li class="gallery__item">
+                        <img src="cabinet.jpg" alt="" class="gallery__img">
+                    </li>
+                    <li class="gallery__item">
+                        <img src="cabinet.jpg" alt="" class="gallery__img">
+                    </li>
+                    <li class="gallery__item">
+                        <img src="cabinet.jpg" alt="" class="gallery__img">
+                    </li>
+                </ul>
+            </div>
+            <!--Буллеты-->
+            <div class="container">
+                <div class="gallery__pagination">
+                    <div class="slider-pagination offers__slider-pagination">
+                        <ul class="slider-pagination__bullets offers__slider-paginations-bullets">
+                            <li class="slider-pagination__bullet offers-slider__pagination-bullet">
+                                <a href="#!" class="slider-pagination__link offers-slider__pagination-link"></a>
+                            </li>
+                            <li class="slider-pagination__bullet offers-slider__pagination-bullet">
+                                <a href="#!" class="slider-pagination__link offers-slider__pagination-link"></a>
+                            </li>
+                            <li class="slider-pagination__bullet offers-slider__pagination-bullet">
+                                <a href="#!" class="slider-pagination__link offers-slider__pagination-link"></a>
+                            </li>
+                            <li class="slider-pagination__bullet offers-slider__pagination-bullet">
+                                <a href="#!" class="slider-pagination__link offers-slider__pagination-link"></a>
+                            </li>
+                            <li class="slider-pagination__bullet offers-slider__pagination-bullet">
+                                <a href="#!" class="slider-pagination__link offers-slider__pagination-link"></a>
+                            </li>
+                            <li class="slider-pagination__bullet offers-slider__pagination-bullet">
+                                <a href="#!" class="slider-pagination__link offers-slider__pagination-link"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
     </div>
