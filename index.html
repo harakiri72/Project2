@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=1260, initial-scale=1.0">
     <title>Инфолайн</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,14 +17,13 @@
 <body>
     <div class="wrapper">
         <header class="header">
-            <div class="container ">
-                <div class="header__content">
+            <div class="container header__container">
+                <nav class="nav header__nav">
                     <a class="logo" href="#!">
                         <img src="logo.svg" alt="Инфолайн logo" class="logo__img">
                         <span class="logo__title">инфолайн</span>
                     </a>
-                    <nav class="nav">
-                        <ul class="nav__list">
+                        <ul class="nav__list header__menu">
                             <li class="nav__item">
                                 <a href="" class="nav__link"><i>Главная</i></a>
                             </li>
@@ -38,12 +37,12 @@
                                 <a href="" class="nav__link">Контакты</a>
                             </li>
                         </ul>
-                    </nav>
-                    <div class="header__contact">
+           
+                    <div class="phone header__contact">
                         <img src="tel.svg" alt="Телефон logo" class="header__contact-img">
-                        <a href="tel:+73452388000" class="header__tel">8 (3452) <span>388-000</span></a>
+                        <a href="tel:+73452388000" class="header__phone">8 (3452) <span>388-000</span></a>
                     </div>
-                </div>
+                </nav>
             </div>
         </header>
         <section class="hero">
@@ -54,7 +53,7 @@
                         <span class="location__text">ул. республики, 61</span>
                     </address>
                     <h1 class="title hero__title">Бизнес-центр в тюмени</h1>
-                    <button class="btn hero__btn btn_theme_blue">Заказать звонок</button>
+                    <button class="btn hero__btn btn_theme_blue btn_size_big">Заказать звонок</button>
                 </div>
                 <div class="hero__img-wrap">
                     <img class="hero_img" src="house.png" alt="Здание">
@@ -67,17 +66,17 @@
                 <div class="rent__btns">
                     <ul class="rent__btns-list">
                         <li class="rent__btns-item">
-                            <button class="btn btn__theme_trasparent active">
+                            <button class="btn btn__theme_trasparent btn_size_small active">
                                 Офисы (7)
                             </button>
                         </li>
-                        <li class="rent__btns-item">
-                            <button class="btn btn__theme_trasparent">
+                        <li class="rent__btns-item ">
+                            <button class="btn btn__theme_trasparent btn_size_small">
                                 Конференс-залы (2)
                             </button>
                         </li>
                         <li class="rent__btns-item">
-                            <button class="btn btn__theme_trasparent">
+                            <button class="btn btn__theme_trasparent btn_size_small">
                                 Торговые (0)
                             </button>
                         </li>
@@ -109,58 +108,60 @@
                                             <span class="offer__info-value offer__info-value_true">Есть</span>
                                         </li>
                                     </ul>
-                                    <button class="btn btn_theme_blue offer__btn">запросить цену</button>
+                                    <button class="btn btn_theme_blue offer__btn btn_size_big">запросить цену</button>
                                 </div>
                             </div>
                         </li>
-                        <div class="offer__content">
-                            <div class="offer__img-wrap">
-                                <img src="office.jpg" alt="Фото кабинета" class="offer__img" width="380"
-                                    height="222">
+                        <li class="offer">
+                            <div class="offer__content">
+                                <div class="offer__img-wrap">
+                                    <img src="office.jpg" alt="Фото кабинета" class="offer__img" width="380"
+                                        height="222">
+                                </div>
+                                <div class="offer__info">
+                                    <ul class="offer__info-list">
+                                        <li class="offer__info-item">
+                                            <span class="offer__info-desc">Площадь</span>
+                                            <span class="offer__info-value">42</span>
+                                        </li>
+                                        <li class="offer__info-item">
+                                            <span class="offer__info-desc">Этаж</span>
+                                            <span class="offer__info-value">7</span>
+                                        </li>
+                                        <li class="offer__info-item">
+                                            <span class="offer__info-desc">Интернет</span>
+                                            <span class="offer__info-value offer__info-value_true">Есть</span>
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn_theme_blue offer__btn btn_size_big">запросить цену</button>
+                                </div>
                             </div>
-                            <div class="offer__info">
-                                <ul class="offer__info-list">
-                                    <li class="offer__info-item">
-                                        <span class="offer__info-desc">Площадь</span>
-                                        <span class="offer__info-value">42</span>
-                                    </li>
-                                    <li class="offer__info-item">
-                                        <span class="offer__info-desc">Этаж</span>
-                                        <span class="offer__info-value">7</span>
-                                    </li>
-                                    <li class="offer__info-item">
-                                        <span class="offer__info-desc">Интернет</span>
-                                        <span class="offer__info-value offer__info-value_true">Есть</span>
-                                    </li>
-                                </ul>
-                                <button class="btn btn_theme_blue offer__btn">запросить цену</button>
+                        </li>
+                        <li class="offer">
+                            <div class="offer__content">
+                                <div class="offer__img-wrap">
+                                    <img src="office.jpg" alt="Фото кабинета" class="offer__img" width="380"
+                                        height="222">
+                                </div>
+                                <div class="offer__info">
+                                    <ul class="offer__info-list">
+                                        <li class="offer__info-item">
+                                            <span class="offer__info-desc">Площадь</span>
+                                            <span class="offer__info-value">42</span>
+                                        </li>
+                                        <li class="offer__info-item">
+                                            <span class="offer__info-desc">Этаж</span>
+                                            <span class="offer__info-value">7</span>
+                                        </li>
+                                        <li class="offer__info-item">
+                                            <span class="offer__info-desc">Интернет</span>
+                                            <span class="offer__info-value offer__info-value_true">Есть</span>
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn_theme_blue offer__btn btn_size_big">запросить цену</button>
+                                </div>
                             </div>
-                        </div>
-                    </li>
-                    <div class="offer__content">
-                        <div class="offer__img-wrap">
-                            <img src="office.jpg" alt="Фото кабинета" class="offer__img" width="380"
-                                height="222">
-                        </div>
-                        <div class="offer__info">
-                            <ul class="offer__info-list">
-                                <li class="offer__info-item">
-                                    <span class="offer__info-desc">Площадь</span>
-                                    <span class="offer__info-value">42</span>
-                                </li>
-                                <li class="offer__info-item">
-                                    <span class="offer__info-desc">Этаж</span>
-                                    <span class="offer__info-value">7</span>
-                                </li>
-                                <li class="offer__info-item">
-                                    <span class="offer__info-desc">Интернет</span>
-                                    <span class="offer__info-value offer__info-value_true">Есть</span>
-                                </li>
-                            </ul>
-                            <button class="btn btn_theme_blue offer__btn">запросить цену</button>
-                        </div>
-                    </div>
-                </li>
+                        </li>
                     </ul>
                     <button class="control control_next offers__control offers__control-next">вперед</button>
                     <div class="slider-pagination offers__slider-pagination">
@@ -190,11 +191,129 @@
                 </div>
             </div>
         </section>
-        <section class="services">
+        <!--Услуги компании-->
+        <section class="services section">
+            <div class="container">
+                <!--Шапка секции (заголовок и логотип)-->
+                <div class="services__header">
+                    <h2 class="section__title services__title">Услуги компании</h2>
+                    <div>
+                        <img src="logo.svg" alt="Инфолайн logo" class="logo__img2">
+                    <span class="logo__title2">инфолайн</span>
+                    </div>
+                </div>
+                <!-- Список услуг-->
+                <ul class="services__list">
+                    <!-- Услуга -->
+                    <li class="service">
+                        <div class="service__icon">
+                            <img src="wifi.svg" alt="wifi">
+                        </div>
+                        <!--Блок с описанием-->
+                        <div class="service__content">
+                            <!-- Заголовок блока-->
+                            <h3 class="service__title">Обслуживание офисной техники и интернет</h3>
+                            <!--Список преймуществ-->
+                            <ul class="service__list">
+                                <li class="service__item">Локальные сети и интернет</li>
+                                <li class="service__item">Контроль доступа</li>
+                                <li class="service__item">Обслуживание офисной техники</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="service">
+                        <div class="service__icon">
+                            <img src="hat.svg" alt="wifi">
+                        </div>
+                        <!--Блок с описанием-->
+                        <div class="service__content">
+                            <!-- Заголовок блока-->
+                            <h3 class="service__title">Обслуживание офисной техники и интернет</h3>
+                            <!--Список преймуществ-->
+                            <ul class="service__list">
+                                <li class="service__item">Локальные сети и интернет</li>
+                                <li class="service__item">Контроль доступа</li>
+                                <li class="service__item">Обслуживание офисной техники</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="service">
+                        <div class="service__icon">
+                            <img src="Frame 19.svg" alt="wifi">
+                        </div>
+                        <!--Блок с описанием-->
+                        <div class="service__content">
+                            <!-- Заголовок блока-->
+                            <h3 class="service__title">Обслуживание офисной техники и интернет</h3>
+                            <!--Список преймуществ-->
+                            <ul class="service__list">
+                                <li class="service__item">Локальные сети и интернет</li>
+                                <li class="service__item">Контроль доступа</li>
+                                <li class="service__item">Обслуживание офисной техники</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="service">
+                        <div class="service__icon">
+                            <img src="Frame 20.svg" alt="wifi">
+                        </div>
+                        <!--Блок с описанием-->
+                        <div class="service__content">
+                            <!-- Заголовок блока-->
+                            <h3 class="service__title">Обслуживание офисной техники и интернет</h3>
+                            <!--Список преймуществ-->
+                            <ul class="service__list">
+                                <li class="service__item">Локальные сети и интернет</li>
+                                <li class="service__item">Контроль доступа</li>
+                                <li class="service__item">Обслуживание офисной техники</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="service">
+                        <div class="service__icon">
+                            <img src="Frame 21.svg" alt="wifi">
+                        </div>
+                        <!--Блок с описанием-->
+                        <div class="service__content">
+                            <!-- Заголовок блока-->
+                            <h3 class="service__title">Обслуживание офисной техники и интернет</h3>
+                            <!--Список преймуществ-->
+                            <ul class="service__list">
+                                <li class="service__item">Локальные сети и интернет</li>
+                                <li class="service__item">Контроль доступа</li>
+                                <li class="service__item">Обслуживание офисной техники</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="service">
+                        <div class="service__icon">
+                            <img src="Frame 16.svg" alt="wifi">
+                        </div>
+                        <!--Блок с описанием-->
+                        <div class="service__content">
+                            <!-- Заголовок блока-->
+                            <h3 class="service__title">Обслуживание офисной техники и интернет</h3>
+                            <!--Список преймуществ-->
+                            <ul class="service__list">
+                                <li class="service__item">Локальные сети и интернет</li>
+                                <li class="service__item">Контроль доступа</li>
+                                <li class="service__item">Обслуживание офисной техники</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
 
+            <!--Галерея-->
         </section>
-        <section class="gallery">
-
+        <section class="gallery section">
+            <div class="container">
+                <h2 class="section-title gallery__title">фото галерея</h2>
+            </div>
+            <div class="gallery__slider">
+                <!--Кнопки-->
+                <div class="galley__slider-controls"></div>
+            </div>
         </section>
     </div>
 
